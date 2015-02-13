@@ -1,0 +1,282 @@
+/**
+ * CSS Document - Simple Blog Script
+ * FH St. Pölten, mt111073
+ */
+ 
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700);
+
+html, body {
+	margin: 0;
+	padding: 0;
+	
+	color: #222222;
+	font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-size: 14px;
+	line-height: 1.45em;
+	
+	text-align: left; /* center whole page; for old browsers IE <= 6 */
+}
+
+#site-header,
+main,
+footer {
+	width: 80%;
+	max-width: 940px;
+	min-width: 320px;
+	margin: 0 auto;
+	padding: 0 10px;
+}
+
+/**
+ * ********** Header **********
+ */
+
+#site-header {
+	height: 120px;
+	
+	border-bottom: 2px solid #222222;
+}
+
+#site-header h1 {
+	margin: 0;
+	padding: 0;
+	
+	font-size: 5em;
+	line-height: 1em;
+}
+
+#site-header p {
+	margin: 0;
+	padding: 5px 0 0 5px;
+}
+
+#site-header a,
+#site-header a:link,
+#site-header a:visited {	
+	background-color: transparent;
+	
+	color: #222222;
+	text-decoration: none;
+}
+
+#site-header a:focus,
+#site-header a:hover,
+#site-header a:active {
+	color: #333333;
+}
+
+/**
+ * ********** Main Area **********
+ */
+
+main {
+	padding: 1em 0;
+	overflow: hidden;
+}
+
+main a,
+main a:link,
+main a:visited,
+main a:focus {
+	position: relative;
+	top: 0.3em;
+	margin: 1em 0;
+	padding: 0.5em;
+	
+	background-color: #333333;
+	
+	color: #EEEEEE;
+	text-decoration: none;
+}
+
+main a:hover,
+main a:active {
+	background-color: #666666;
+}
+
+.article-wrapper {
+	width: 65%;
+	float: left;
+}
+
+@media screen and (max-width: 520px) {
+	.article-wrapper {
+		width: 100%;
+		float: none;
+	}
+}
+
+/**
+ * ********** Article **********
+ */
+
+article {
+	margin-bottom: 3em;
+	
+	font-size: 1em;
+	line-height: 1.65em;
+	text-align: left;
+}
+
+article header {
+}
+
+article header h2 {
+	margin: 0 0 0.75em 0;
+	
+	font-size: 2em;
+}
+
+em {
+	position: relative;
+	top: -1em;
+	
+	color: #999999;
+}
+
+/**
+ * ********** Sidebar **********
+ */
+
+.sidebar {
+	width: 28%;
+	float: right;
+	
+	border-left: 1px dotted #666666;
+}
+
+@media screen and (max-width: 520px) {
+	.sidebar {
+		width: 100%;
+		float: none;
+		
+		border-left: none;
+	}
+}
+
+/**
+ * ********** General form **********
+ */
+
+fieldset {
+	border: none;
+}
+
+legend {
+	margin: 0 0 0.5em 0;
+	padding: 0;
+	
+	color: #DDDDDD;
+	font-size: 1.5em;
+	font-weight: 700;
+	letter-spacing: -2px;
+}
+
+input, 
+textarea {
+	width: 100%;
+	margin-bottom: 0.75em;
+	padding: 0.5em;
+	
+	border: 1px solid #CCCCCC;
+	
+	color: #333333;
+	font-family: 'Open Sans';
+}
+
+textarea {
+	height: 10em;
+	max-height: 50em;
+	resize: vertical;
+}
+
+input[type="submit"] {
+	box-sizing: content-box;
+	background-color: #333333;
+	border: none;
+	color: #EEEEEE;
+}
+
+input[type="submit"]:hover {
+	background-color: #666666;
+	border: none;
+	cursor: pointer;
+}
+
+.notification {
+	width: 80%;
+	margin: 1em auto;
+	padding: 0.3em;
+	
+	background-color: #FF0000;
+	
+	color: #FFFFFF;
+}
+
+/**
+ * ********** Post form **********
+ */
+
+#post-form fieldset {
+	margin: 0;
+	padding: 0;
+}
+
+#post-form legend {
+	display: none;
+}
+
+#submit-post {
+	width: auto;
+	margin-bottom: 3em;
+}
+
+#post-form label {
+	display: none;
+}
+
+#post-form #title,
+#post-form #text {
+	padding: 0;
+	
+	border: 1px dotted #DDDDDD;
+}
+
+#post-form #title {
+	font-size: 2em;
+	font-weight: bold;
+}
+
+#post-form #text {
+	font-size: 1em;
+	line-height: 1.65em;
+}
+
+#post-form em {
+	top: -1.5em;
+}
+
+#post-delete {
+	width: 30%;
+	position: relative;
+	top: -3em;
+	float: right;
+}
+
+/**
+ * ********** Footer **********
+ */
+
+#site-footer {
+	clear: both;
+	border-top: 2px solid #222222;
+}
+
+/**
+ * ********** Benchmark section **********
+ */
+
+#bench {
+	color: #666666;
+	text-align: center;
+}
